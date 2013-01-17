@@ -1,0 +1,8 @@
+postgres:
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: attr_encrytped_pgcrypto
+  pool: 5
+  username: postgres
+  password:

@@ -1,3 +1,4 @@
+.DS_Store
 *.gem
 *.rbc
 .bundle
@@ -16,3 +17,6 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+spec/database.yml
+spec/debug.log
