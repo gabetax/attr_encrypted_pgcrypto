@@ -1,5 +1,7 @@
 # attr_encrypted_pgcrypto
 
+[![Dependency Status](https://gemnasium.com/gabetax/attr_encrypted_pgcrypto.png)](https://gemnasium.com/gabetax/attr_encrypted_pgcrypto)
+
 A [pgcrypto](http://www.postgresql.org/docs/9.1/static/pgcrypto.html)-based [Encryptor](https://github.com/shuber/encryptor) implementation for [attr_encrypted](https://github.com/shuber/attr_encrypted). It delegates to `pgp_sym_encrypt()` and `pgp_sym_decrypt()` to provide symmetric-key encryption. It's useful if you need to:
 
 - Access the plain text values directly from SQL without bringing the data into Ruby
@@ -80,11 +82,11 @@ Tested against:
 
 The bulk of this code is a humble verbatim copy and paste job from [jmazzi's crypt_keeper gem](https://github.com/jmazzi/crypt_keeper). Thanks, Justin!
 
-Why not just use crypt_keeper? crypt_keeper uses ActiveRecord callbacks to encrypt and decrypt, while attr\_encrypted uses accessor methods. This means:
+Why not just use crypt_keeper? crypt_keeper uses ActiveRecord callbacks to encrypt and decrypt, while attr\_encrypted defines accessor methods. This means:
 
-- Model instances are always dirty after a fetch
-- Data is eagerly encrypted and decrypted, causing unnecessary extra queries
-- If you have other callback based dependencies (e.g. papertrail) they may receive either the encrypted or plaintext version of the columns.
+- Model instances are always dirty after a fetch.
+- Data is eagerly encrypted and decrypted, causing unnecessary extra queries.
+- Other callback based dependencies (e.g. papertrail) may receive either the encrypted or plaintext version of the columns.
 
 ## Contributing
 
