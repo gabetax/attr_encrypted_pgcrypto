@@ -22,6 +22,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'activesupport',          '>= 3.0'
 
   gem.add_development_dependency 'pry'
-  gem.add_development_dependency 'rspec', '~> 2.12.0'
+  gem.add_development_dependency 'rspec', '~> 2.13.0'
   gem.add_development_dependency 'pg',    '~> 0.14.0'
 end
