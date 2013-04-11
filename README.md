@@ -82,12 +82,6 @@ Tested against:
 
 The bulk of this code is a humble verbatim copy and paste job from [jmazzi's crypt_keeper gem](https://github.com/jmazzi/crypt_keeper). Thanks, Justin!
 
-Why not just use crypt_keeper? crypt_keeper uses ActiveRecord callbacks to encrypt and decrypt, while attr\_encrypted defines accessor methods. This means:
-
-- Model instances are always dirty after a fetch.
-- Data is eagerly encrypted and decrypted, causing unnecessary extra queries.
-- Other callback based dependencies (e.g. papertrail) may receive either the encrypted or plaintext version of the columns.
-
 ## Contributing
 
 1. Fork it
