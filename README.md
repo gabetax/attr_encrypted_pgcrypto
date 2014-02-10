@@ -1,5 +1,6 @@
 # attr_encrypted_pgcrypto
 
+[![Build Status](https://travis-ci.org/gabetax/attr_encrypted_pgcrypto.png)](https://travis-ci.org/gabetax/attr_encrypted_pgcrypto)
 [![Dependency Status](https://gemnasium.com/gabetax/attr_encrypted_pgcrypto.png)](https://gemnasium.com/gabetax/attr_encrypted_pgcrypto)
 
 A [pgcrypto](http://www.postgresql.org/docs/9.1/static/pgcrypto.html)-based [Encryptor](https://github.com/shuber/encryptor) implementation for [attr_encrypted](https://github.com/shuber/attr_encrypted). It delegates to `pgp_sym_encrypt()` and `pgp_sym_decrypt()` to provide symmetric-key encryption. It's useful if you need to:
