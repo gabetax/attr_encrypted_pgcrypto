@@ -16,7 +16,7 @@ describe AttrEncryptedPgcrypto::Encryptor do
 
     context "valid" do
       it "returns cipher text" do
-        AttrEncryptedPgcrypto::Encryptor.encrypt(plaintext, key: key).should be_a(String)
+        expect(AttrEncryptedPgcrypto::Encryptor.encrypt(plaintext, key: key)).to be_a(String)
       end
     end
   end
@@ -24,7 +24,7 @@ describe AttrEncryptedPgcrypto::Encryptor do
   describe "#decrypt" do
     context "valid" do
       it "returns plaintext" do
-        AttrEncryptedPgcrypto::Encryptor.decrypt(cipher, key: key).should == plaintext
+        expect(AttrEncryptedPgcrypto::Encryptor.decrypt(cipher, key: key)).to eq plaintext
       end
     end
 
