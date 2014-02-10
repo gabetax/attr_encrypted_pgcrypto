@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 1.9.3
+  - 2.0
+  - 2.1
+before_script:
+  - psql -c 'CREATE DATABASE attr_encrytped_pgcrypto' -U postgres
+  - psql attr_encrytped_pgcrypto -c 'CREATE EXTENSION IF NOT EXISTS pgcrypto' -U postgres
+  - cp spec/default.database.yml spec/database.yml
+
