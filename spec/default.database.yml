@@ -1,8 +1,9 @@
 postgres:
   adapter: postgresql
+  host: postgres
   encoding: utf8
   reconnect: false
-  database: attr_encrytped_pgcrypto
+  database: docker
   pool: 5
-  username: postgres
-  password:
+  username: docker
+  password: docker
