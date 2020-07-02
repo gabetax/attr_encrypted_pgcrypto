@@ -74,10 +74,10 @@ Setup spec/database.yml and run `rake benchmark` to test the results on your own
 
 Tested against:
 
-- MRI Ruby 1.9.3
-- Rails 3.2.11
-- attr_encrypted 1.2.1
-- PostgreSQL 9.1
+- MRI Ruby 2.7
+- Rails 6
+- attr_encrypted 3.1.0
+- PostgreSQL 11.8
 
 ## Credits
 
