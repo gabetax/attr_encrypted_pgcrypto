@@ -16,7 +16,7 @@ module AttrEncryptedPgcrypto::LogSubscriber
 
     it "filters pgp functions" do
       expect(subject).to receive(:sql_without_postgres_pgp) do |event|
-        event.payload[:sql].should == output_query
+        expect(event.payload[:sql]).to eq(output_query)
       end
 
       subject.sql(ActiveSupport::Notifications::Event.new(:sql, 1, 1, 1, { sql: output_query }))

@@ -23,6 +23,6 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rake'
-  gem.add_development_dependency 'rspec', '~> 2.14'
   gem.add_development_dependency 'pg',    '~> 0.14'
+  gem.add_development_dependency 'rspec', '~> 3.9.0'
 end
