@@ -1,0 +1,15 @@
+version: '2'
+services:
+    ruby:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        volumes:
+            - .:/app:rw
+        container_name: attr_encrypted_pgcrypto
+
+    postgres:
+        image: postgres:11.8
+        ports:
+            - 5432:5432
+        env_file: ./docker/database-config
