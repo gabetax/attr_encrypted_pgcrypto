@@ -9,7 +9,8 @@ module AttrEncryptedPgcrypto
       extend ActiveSupport::Concern
 
       included do
-        alias_method_chain :sql, :postgres_pgp
+        alias_method :sql_without_postgres_pgp, :sql
+        alias_method :sql, :sql_with_postgres_pgp
       end
 
       # Public: Prevents sensitive data from being logged
