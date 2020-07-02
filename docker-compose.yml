@@ -9,7 +9,7 @@ services:
         container_name: attr_encrypted_pgcrypto
 
     postgres:
-        image: postgres:9.5.3
+        image: postgres:11.8
         ports:
             - 5432:5432
         env_file: ./docker/database-config

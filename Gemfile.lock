@@ -30,12 +30,12 @@ GEM
     i18n (0.6.9)
     method_source (0.8.1)
     multi_json (1.8.2)
-    pg (0.14.1)
     pry (0.9.10)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.3.1)
     rake (10.1.1)
+    pg (1.2.3)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -57,7 +57,7 @@ PLATFORMS
 
 DEPENDENCIES
   attr_encrypted_pgcrypto!
-  pg (~> 0.14)
+  pg (~> 1.2.3)
   pry
   rake
   rspec (~> 3.9.0)
