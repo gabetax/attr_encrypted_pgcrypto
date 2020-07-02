@@ -1,4 +1,4 @@
-FROM ruby:2.4.10
+FROM ruby:2.7.1
 
 # Install Ubuntu Dependencies
 RUN apt-get update && apt-get install -y postgresql-client
